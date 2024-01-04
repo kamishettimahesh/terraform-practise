@@ -1,0 +1,24 @@
+variable "sg-name" {
+  type = string
+  default = "roboshop" 
+}
+
+variable "sg-descreption" {
+  type = string
+  default = "Allow TLS inbound traffic" 
+}
+
+variable "inbound-from-port" {
+  type = number
+  default = "0" 
+}
+
+variable "outbound-from-port" {
+  type = number
+  default = "0" 
+}
+
+variable "cidr_blocks" {
+  type = list
+  default = ["0.0.0.0/0"]
+}
